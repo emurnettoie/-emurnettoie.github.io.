@@ -5,30 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Emur Nettoie</title>
   <style>
-    body { font-family: sans-serif; padding: 20px; max-width: 800px; margin: auto; }
+    body { font-family: sans-serif; padding: 20px; max-width: 800px; margin: auto; background-color: #f9f9f9; }
     header, section { margin-bottom: 40px; }
-    h1, h2 { color: #333; }
+    h1, h2 { color: #222; }
     form input, form textarea, form button {
       display: block; width: 100%; margin-bottom: 10px; padding: 10px; border: 1px solid #ccc; border-radius: 5px;
     }
     form button { background-color: black; color: white; cursor: pointer; }
     ul { padding-left: 20px; }
+    img { max-width: 100%; height: auto; margin-top: 10px; border-radius: 10px; }
+    .logo { max-width: 200px; margin-bottom: 20px; }
+    .review { background-color: white; padding: 15px; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
+    .stars { color: gold; font-size: 1.2em; }
   </style>
 </head>
 <body>
   <header>
+    <img src="https://via.placeholder.com/150x50.png?text=Emur+Nettoie+Logo" alt="Logo Emur Nettoie" class="logo">
     <h1>Emur Nettoie</h1>
     <p>Entreprise de nettoyage à Longueuil</p>
-    <p>1155 rue Saint-Charles Ouest, Longueuil, QC | 514-466-9261</p>
+    <p>📍 1155 rue Saint-Charles Ouest, Longueuil, QC</p>
+    <p>🚗 Nous desservons tout le Grand Montréal et ses environs</p>
+    <p>📞 <a href="https://wa.me/15144669261" target="_blank">514-466-9261 (Cliquez pour WhatsApp)</a></p>
   </header>
 
   <section>
     <h2>À propos</h2>
-    <p>Emur Nettoie est une entreprise locale spécialisée dans les services de ménage résidentiel, commercial et après construction. Nous mettons l'accent sur la qualité, la fiabilité et la satisfaction de notre clientèle.</p>
+    <p>Emur Nettoie est une entreprise locale spécialisée dans les services de ménage résidentiel, commercial et après construction dans le Grand Montréal et ses environs. Nous mettons l'accent sur la qualité, la fiabilité et la satisfaction de notre clientèle.</p>
   </section>
 
   <section>
     <h2>Nos services</h2>
+    <img src="https://via.placeholder.com/800x400.png?text=Nos+Services" alt="Services de nettoyage">
     <ul>
       <li>Ménage résidentiel régulier ou ponctuel</li>
       <li>Nettoyage de bureaux et commerces</li>
@@ -39,19 +47,44 @@
   </section>
 
   <section>
+    <h2>Galerie photos</h2>
+    <img src="https://via.placeholder.com/800x400.png?text=Avant+Nettoyage" alt="Avant nettoyage">
+    <img src="https://via.placeholder.com/800x400.png?text=Pendant+Nettoyage" alt="Pendant nettoyage">
+    <img src="https://via.placeholder.com/800x400.png?text=Après+Nettoyage" alt="Après nettoyage">
+  </section>
+
+  <section>
     <h2>Demander une estimation gratuite</h2>
-    <form>
-      <input type="text" placeholder="Nom complet">
-      <input type="tel" placeholder="Téléphone">
-      <input type="email" placeholder="Courriel">
-      <textarea placeholder="Décrivez vos besoins" rows="4"></textarea>
+    <form action="https://formsubmit.co/contact@emurnettoie.ca" method="POST">
+      <input type="text" name="Nom" placeholder="Nom complet" required>
+      <input type="tel" name="Téléphone" placeholder="Téléphone" required>
+      <input type="email" name="Email" placeholder="Courriel" required>
+      <textarea name="Message" placeholder="Décrivez vos besoins" rows="4" required></textarea>
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://emurnettoie.github.io/merci.html">
       <button type="submit">Envoyer la demande</button>
     </form>
   </section>
 
   <section>
+    <h2>Ce que disent nos clients</h2>
+    <div class="review">
+      <p class="stars">★★★★★</p>
+      <p>« Service impeccable, personnel ponctuel et très professionnel. Je recommande sans hésiter ! » — Marie T.</p>
+    </div>
+    <div class="review">
+      <p class="stars">★★★★☆</p>
+      <p>« Très bon service pour le prix. Ma maison n’a jamais été aussi propre ! » — Jérôme L.</p>
+    </div>
+    <div class="review">
+      <p class="stars">★★★★★</p>
+      <p>« Équipe dynamique, courtoise et efficace. Merci pour le nettoyage après notre déménagement ! » — Sophie G.</p>
+    </div>
+  </section>
+
+  <section>
     <h2>Contact</h2>
-    <p>📞 Téléphone : <a href="tel:5144669261">514-466-9261</a></p>
+    <p>📞 Téléphone : <a href="https://wa.me/15144669261" target="_blank">514-466-9261 (WhatsApp)</a></p>
     <p>📍 Adresse : 1155 rue Saint-Charles Ouest, Longueuil, QC</p>
     <p>📧 Courriel : <a href="mailto:contact@emurnettoie.ca">contact@emurnettoie.ca</a></p>
   </section>
